@@ -1,0 +1,39 @@
+
+public class Calculadora {
+	// DEFININDO ATRIBUTOS STATIC
+	static int contadorAdicao = 0;
+	static int contadorSubtracao = 0;
+	// DEFININDO METODOS STATIC
+	static int soma ( int a, int b )
+	{
+	contadorAdicao++; // ACESSO AO ATRIBUTO STATIC
+	return a + b;
+	}
+	static int subtrai ( int a, int b )
+	{
+	contadorSubtracao++; // ACESSO AO ATRIBUTO STATIC
+	return a - b;
+	}
+
+}
+
+
+-----------------tela2-------------
+
+public class ClienteCalculadora 
+{
+	public static void main (String args[])
+	{
+		// INVOCA METODOS STATIC DA CLASSE Calculadora
+		int z = Calculadora.soma( 5, 8 );
+		System.out.println( z );
+		System.out.println( Calculadora.subtrai( 5, 8 ) );
+		// EXIBE ATRIBUTOS STATIC DA CLASSE Calculadora
+		System.out.println( "Numero de adicoes = " +
+		Calculadora.contadorAdicao);
+		System.out.println( "Numero de subtracoes = " +
+		Calculadora.contadorSubtracao);
+		}
+
+	
+}
