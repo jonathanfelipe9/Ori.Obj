@@ -1,0 +1,40 @@
+package equipeSemEquipe;
+
+	static String imprimeCor() {
+		String nomeCor = "";
+		
+		switch (cor) { // switch (mostraCor()): substituir pelo método
+		case 0:
+			nomeCor = "Verde";
+			break;
+			
+		case 1:
+			nomeCor = "Amarelo";
+			break;
+			
+		case 2:
+			nomeCor = "Vermelho";
+			break;
+		}
+		return nomeCor;
+	}
+}
+
+===================================================================
+
+package equipeSemEquipe;
+
+public class Controle {
+	public static void main (String args []) {
+		
+		System.out.println (Semaforo.imprimeCor());
+		
+		
+		for (int i = 0; i < 10; i = i + 1)
+		{
+			static int MudaProximaCor() {
+				System.out.println (Semaforo.MostraCor())
+			}
+		}
+	}
+}
